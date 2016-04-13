@@ -1,0 +1,16 @@
+# -*- coding: utf-8-unix; mode: org; -*-
+* diff_option
+  [2016-04-13 水]
+- http://qiita.com/NewGyu/items/7055aee2243e50c0ee64
+  - diff コマンドで特定の差異を無視する( -I オプション --ignore-matching-lines ) - Qiita
+#+BEGIN_EXAMPLE
+[jenkins@bodais-performance-test diff]$ echo a1 a2 b1 b2 c1 c2 | xargs -n 1 > x1.txt
+[jenkins@bodais-performance-test diff]$ echo a1 a2 b3 b2 c1 c2 | xargs -n 1 > x2.txt
+[jenkins@bodais-performance-test diff]$ diff x1.txt x2.txt
+3c3
+< b1
+---
+> b3
+[jenkins@bodais-performance-test diff]$ diff -I "b.*" x1.txt x2.txt
+[jenkins@bodais-performance-test diff]$
+#+END_EXAMPLE

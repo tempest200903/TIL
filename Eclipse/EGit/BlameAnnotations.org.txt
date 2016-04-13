@@ -1,0 +1,4 @@
+# git blame をエディタのアノテーションとして表示する方法 #
+
+- http://wiki.eclipse.org/EGit/New_and_Noteworthy/1.0.0#Blame_Annotations
+- History View 右クリック; 上から4個目 Show Annotations

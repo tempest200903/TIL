@@ -1,0 +1,8 @@
+# -*- coding: utf-8-unix; mode: org; -*-
+* TIL bash regular_expression
+** スペースを表す正規表現
+#+BEGIN_EXAMPLE
+[jenkins@bodais-performance-test 20160405-ticket3245-s10-j24-ct-report]$ [[ "abc" =~ .[[:space:]]. ]] && echo YES
+[jenkins@bodais-performance-test 20160405-ticket3245-s10-j24-ct-report]$ [[ "a c" =~ .[[:space:]]. ]] && echo YES
+YES
+#+END_EXAMPLE
