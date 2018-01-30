@@ -1,0 +1,4 @@
+* 〈Eclipse/EGit/README〉
+
+- [[BlameAnnotations.md]] git blame をエディタのアノテーションとして表示する方法。
+

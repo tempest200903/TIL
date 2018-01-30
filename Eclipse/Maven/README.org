@@ -1,0 +1,15 @@
+* 〈Eclipse/Maven/README〉
+
+** トラブルシューティング1
+
+- 現象
+  - Maven を使うプロジェクトを開くと、 Problem view に以下のエラーが表示される。
+  - Cannot read lifecycle mapping metadata for artifact
+    org.apache.maven.plugins:maven-install-plugin:maven-plugin:2.4:runtime
+    Cause: invalid END header (bad central directory offset)
+- 解決方法
+  - ローカルリポジトリ ( C:\Users\%USER%\.m2\repository ) に保存したファイルが破損している可能性がある。
+  - C:\Users\%USER%\.m2\repository\org\apache\maven\plugins\maven-install-plugin\2.4 を削除する。
+  - Eclipse; Maven; Update Project を実行する。
+  - これで解消した。
+
