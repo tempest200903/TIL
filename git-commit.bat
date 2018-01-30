@@ -8,7 +8,7 @@
 	echo %DATE% %TIME%
 	echo %DATE% %TIME% > %LOG%
 
-    call delete-html.bat
+rem    call delete-html.bat
 
 	which git
 	echo "diff wc -l"
@@ -20,7 +20,7 @@
 	if errorlevel 1 goto error
 
 	echo git commit
-	git commit -m "commit-daily %USERDOMAIN%" .
+	git commit -m "commit auto" .
 	rem if errorlevel 1 goto error
 
 	echo git log
